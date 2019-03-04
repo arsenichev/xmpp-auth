@@ -10,6 +10,6 @@ module.exports = {
         };
     },
     anonymousHosts: ['anon.localhost'],
-    logPath: 'logs/xmpp-auth.log',
+    logPath: '/opt/ejabberd/logs/xmpp-auth.log',
     logLevel: 'info' // trace is dangerous (plaintext passwords in logs)
 };
