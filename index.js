@@ -93,11 +93,11 @@ var messageQueue = async.queue(function(message, callback) {
             respond(true);
             callback();
         } else {
-            if (typeof config.authServiceUrl[message.server] === 'undefined') {
+            if (typeof config.authServiceUrls[message.server] === 'undefined') {
                 throw new Error("Undefined authServiceUrl for host" + message.server);
             } else {
                 request.post({
-                    url:  config.authServiceUrl[message.server],
+                    url:  config.authServiceUrls[message.server],
                     form: data
                 }, function(err, httpResponse, body) {
                     if (err) throw(err);

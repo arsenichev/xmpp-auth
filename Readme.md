@@ -5,4 +5,4 @@ This script must be installed on ejabberd server.
 
 External authentication should call `index.js`.
 
-It will ask `config.authServiceUrl`.
+Add hosts and API url in `config.authServiceUrls` (see example config).

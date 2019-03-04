@@ -1,5 +1,5 @@
 module.exports = {
-    authServiceUrl: {
+    authServiceUrls: {
       'localhost': 'https://requestbin.jumio.com/yo7tqryo'
     },
     authParamsModificationFunction: function (params) {
@@ -11,5 +11,5 @@ module.exports = {
     },
     anonymousHosts: ['anon.localhost'],
     logPath: 'logs/xmpp-auth.log',
-    logLevel: 'trace' // trace is dangerous (plaintext passwords in logs)
+    logLevel: 'info' // trace is dangerous (plaintext passwords in logs)
 };
