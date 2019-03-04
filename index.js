@@ -126,7 +126,7 @@ var messageQueue = async.queue(function(message, callback) {
 
 function respond(ok) {
     log.info("respond to service", ok);
-    process.stdout.write(new Buffer([0, 2, 0, ok ? 1 : 0]));
+    process.stdout.write(new Buffer.from([0, 2, 0, ok ? 1 : 0]));
 }
 
 
